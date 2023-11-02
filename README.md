@@ -6,3 +6,7 @@ Little tool to manage kubeconfig files. Heavily experimental, **use at your own 
 
 - [x] Merge multiple kubeconfig files into one.
 - [ ] Rename clusters, contexts and users.
+
+## Usage
+
+-

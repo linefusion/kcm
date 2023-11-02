@@ -1,5 +1,5 @@
-import main from "@kcm/cmd/main.ts";
-import merge from "@kcm/cmd/merge.ts";
+import main from "./cmd/main.ts";
+import merge from "./cmd/merge.ts";
 
 const bootstrap = main;
 

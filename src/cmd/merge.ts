@@ -1,19 +1,22 @@
 import figlet from "https://deno.land/x/deno_figlet@1.0.0/mod.ts";
 
-import { Command } from "@cliffy/command/mod.ts";
-import { Input, Confirm } from "@cliffy/prompt/mod.ts";
+import { Command } from "https://deno.land/x/cliffy@v1.0.0-rc.3/command/mod.ts";
+import {
+  Input,
+  Confirm,
+} from "https://deno.land/x/cliffy@v1.0.0-rc.3/prompt/mod.ts";
 
-import * as fs from "@std/fs/mod.ts";
-import * as yaml from "@std/yaml/mod.ts";
-import * as ansi from "@cliffy/ansi/mod.ts";
-import * as options from "@kcm/utils/options.ts";
+import * as fs from "https://deno.land/std@0.204.0/fs/mod.ts";
+import * as yaml from "https://deno.land/std@0.204.0/yaml/mod.ts";
+import * as ansi from "https://deno.land/x/cliffy@v1.0.0-rc.3/ansi/mod.ts";
+import * as options from "../utils/options.ts";
 
 import {
   KubeConfig,
   findKubeConfigFiles,
   loadKubeConfigFiles,
-} from "@kcm/lib/kubeconfig.ts";
-import { expandHomeDir } from "@kcm/utils/home.ts";
+} from "../lib/kubeconfig.ts";
+import { expandHomeDir } from "../utils/home.ts";
 
 const command = new Command()
   .name("merge")

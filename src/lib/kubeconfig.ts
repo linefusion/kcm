@@ -1,10 +1,10 @@
-import * as fs from "@std/fs/mod.ts";
-import * as path from "@std/path/mod.ts";
-import * as yaml from "@std/yaml/mod.ts";
+import * as fs from "https://deno.land/std@0.204.0/fs/mod.ts";
+import * as path from "https://deno.land/std@0.204.0/path/mod.ts";
+import * as yaml from "https://deno.land/std@0.204.0/yaml/mod.ts";
 
-import { expandGlob } from "@std/fs/mod.ts";
+import { expandGlob } from "https://deno.land/std@0.204.0/fs/mod.ts";
 
-import { z } from "@zod";
+import { z } from "npm:/zod@3.6.0";
 
 export const KubeClusterSchema = z
   .object({

@@ -1,6 +1,6 @@
-import * as path from "@std/path/mod.ts";
-import type { ElementType } from "@kcm/utils/types.ts";
-import { expandHomeDir } from "@kcm/utils/home.ts";
+import * as path from "https://deno.land/std@0.204.0/path/mod.ts";
+import type { ElementType } from "./types.ts";
+import { expandHomeDir } from "./home.ts";
 
 export function toArray<Value, Previous>(
   value: Value,
